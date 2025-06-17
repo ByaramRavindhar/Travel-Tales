@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/thumbnails/018/991/790/small_2x/elegant-yacht-or-cruise-logo-design-for-travel-and-tourism-industry-company-logo-ship-logo-vector.jpg">
+        <title><Travel-Tales></Travel-Tales></title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Experizite</h1>
+                <ul id="menu_bx">
+                    <li><a href="index1.html" target="_parent">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><button id="loginBtn">Login</button></li>
+                    <li><button id="registerBtn">Register</button></li>
+                </ul>
+                <i class="bi bi-three-dots-vertical"></i>
+            </nav>
+            <!-- Login Popup Form -->
+            <div id="loginPopup" class="popup-form">
+                <div class="form-container">
+                    <span id="closeLogin" class="close">&times;</span>
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <table>
+                            <tr>
+                                <td><label for="username">Username:</label></td>
+                                <td><input type="text" id="loginUsername" name="username"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="loginEmail">Email:</label></td>
+                                <td><input type="email" id="loginEmail" name="email" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="loginPassword">Password:</label></td>
+                                <td><input type="password" id="loginPassword" name="password" required></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit" id="submitLogin">Login</button></td>
+                            </tr>
+                            <p>Not registered? <a href="#" id="goToRegister">Create an account</a></p>
+                        </table>
+                    </form>    
+                </div>
+            </div>
+
+            <!-- Register Popup Form -->
+            <div id="registerPopup" class="popup-form">
+                <div class="form-container">
+                    <span id="closeRegister" class="close">&times;</span>
+                    <h2>Register</h2>
+                    <form id="RegisterForm">
+                        <table>
+                            <tr>
+                                <td><label for="username">Username:</label></td>
+                                <td><input type="text" id="registerusername" name="username" required></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="email">Email:</label></td>
+                                <td><input type="email" id="email" name="email" required></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="password">Password:</label></td>
+                                <td> <input type="password" id="password" name="password" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="age">Age:</label></td>
+                                <td><input type="number" id="age" name="age"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone">Phone Number:</label></td>
+                                <td><input type="number" id="phone" name="phone"></td>
+                            </tr>
+                            <tr>
+                                <td> <button type="submit" id="submitRegister">Submit</button></td>
+                            </tr>
+                        </table>
+                        <p>Already have an account? <a href="#" id="goToLogin">Login</a></p>
+                    </form>
+                </div>
+            </div>        
+            <div class="content">
+                <div class="cont_bx">
+                    <h1>The Journey to fun and excitement</h1>
+                    <p>Your virtual guide to heaven in Telangana</p>
+                    <div id="welcomeMessage"></div> <!-- Placeholder for the welcome message -->
+                    <form action="discover.html">
+                        <button submit="discover.html">Explore</button>
+                    </form>
+                </div>
+                <div class="trip_px">
+                    <div class="travel_bx">
+                        <h3>Popular Searches</h3>
+                        <h3><a href="discover.html">Show More</a></h3>
+                        <div class="cards">
+                            <div class="card">
+                                <!-- <img src="./Golconda.jpeg" alt="Golkonda Fort"> -->
+                                <a href="https://www.google.com/maps?q=Golconda+Fort,Hyderabad,India" target="_blank"><img src="./Golconda.jpeg" width="200px" height="200px" alt="Golconda"></a>
+                                <dd>Golconda Fort</dd>
+                                <div class="btn_city">
+                                    <a href="discover.html">Click Here to Know more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!-- <img src="./ramoji.jpeg" alt="Ramoji Film City"> -->
+                                <a href="https://www.google.com/maps?q=Ramoji+Film+City,Hyderabad,India" target="_blank"><img src="./ramoji.jpeg" width="200px" height="200px"></a>
+                                <dd>Ramoji Film City</dd>
+                                <div class="btn_city">
+                                    <a href="discover.html">Click Here to Know more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!-- <img src="./statueofliberty.jpeg" alt="Statue Of Liberty"> -->
+                                <a href="https://www.google.com/maps?q=Statue+Of+Equality,Hyderabad,India" target="_blank"><img src="./statueofliberty.jpeg" width="200px" height="200px"></a>
+                                <dd>Statue Of Liberty</dd>
+                                <div class="btn_city">
+                                    <a href="discover.html">Click Here to Know more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!-- <img src="./salarjung museum.jpeg" alt="Salarjung Museum"> -->
+                                <a href="https://www.google.com/maps?q=Salar+Jung+Museum,Hyderabad,India" target="_blank"><img src="./salarjung museum.jpeg" width="200px" height="200px" alt="Salarjung Museum"></a>
+                                <dd>Salarjung Museum</dd>
+                                <div class="btn_city">
+                                    <a href="discover.html#section1">Click Here to Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="activities">
+            <h1>Adventurous and Fun Activities</h1>
+            <p>Choose your activity</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Wonderla</h3>
+                    <div class="img_text">
+                        <!-- <img src="./Wonderla.jpeg"> -->
+                        <a href="https://www.google.com/maps?q=Wonderla,Hyderabad,India" target="_blank"><img src="./Wonderla.jpeg" width="200px" height="200px"></a>
+                        <h4>Located at Shamirpet</h4>
+                    </div>
+                    <div class="cont_bx">
+                        <div class="price">
+                            <div class="heart_chart">
+                                <i class="bi bi-heart-fill"><span>4.5</span></i>
+                                <i class="bi bi-chat-left-fill"><span>4377</span></i>
+                                <a href="https://www.instagram.com/wonderla_in/"><i class="bi bi-instagram"></i></a>                                
+                            </div>
+                            <div class="info">
+                                <a href="https://www.wonderla.com/hyderabad-amusement-park/">More Info</a>
+                                <h4>Adult-1200/- Child - 900/-</h4>
+                            </div>
+                        </div>
+                        <div class="timings">11:00am to 6:00pm</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>District Gravity</h3>
+                    <div class="img_text">
+                        <!-- <img src="./District Gravity.jpeg"> -->
+                        <a href="https://www.google.com/maps?q=District+Gravity,Hyderabad,India" target="_blank"><img src="./District Gravity.jpeg" width="200px" height="200px"></a>
+                        <h4>Located at Shamirpet</h4>
+                    </div>
+                    <div class="cont_bx">
+                        <div class="price">
+                            <div class="heart_chart">
+                                <i class="bi bi-heart-fill"><span>4.5</span></i>
+                                <i class="bi bi-chat-left-fill"><span>26</span></i>
+                                <a href="https://www.instagram.com/districtgravity/"><i class="bi bi-instagram"></i></a>                                
+                            </div>
+                            <div class="info">
+                                <a href="https://districtgravity.com/">More Info</a>
+                                <h4>Adult-999/-</h4>
+                            </div>
+                        </div>
+                        <div class="timings">9:00am to 6:00pm</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Snow World</h3>
+                    <div class="img_text">
+                        <!-- <img src="Snow World.jpeg"> -->
+                        <a href="https://www.google.com/maps?q=Snow+World,Hyderabad,India" target="_blank"><img src="./Snow World.jpeg" width="200px" height="200px"></a>
+                        <h4>Located at Tank Bund</h4>
+                    </div>
+                    <div class="cont_bx">
+                        <div class="price">
+                            <div class="heart_chart">
+                                <i class="bi bi-heart-fill"><span>3.5</span></i>
+                                <i class="bi bi-chat-left-fill"><span>455</span></i>
+                                <a href="https://www.instagram.com/snowworldindia/"><i class="bi bi-instagram"></i></a>                                
+                            </div>
+                            <div class="info">
+                                <a href="https://www.hyderabadtourism.travel/snow-world-hyderabad">More Info</a>
+                                <h4>Adult-650/- Child 500</h4>
+                            </div>
+                        </div>
+                        <div class="timings">11:00am to 9:00pm</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <p>© 2024 Your Company Name. All Rights Reserved.</p>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}*/
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+header {
+    width:90%;
+    height:95vh;
+    /* border: 1px solid #000; */
+    margin: auto;
+}
+header nav {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+    justify-content: space-between;
+    background: url("https://wallpaperbat.com/img/44615-beautiful-travel-destination-landscape-wallpaper-4k.jpg")no-repeat center center/cover;
+}
+header nav h1{
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    padding: 15px;
+    margin: 0;
+  }
+header nav ul{
+    list-style: none; 
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: auto;
+    
+    /* flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 10px gray;
+    justify-content: center;
+    top: 0px;
+    z-index: 99999999;
+    padding: 0px 10px 8px 30px; */
+}
+header nav ul li{
+    padding: 15px 25px;
+    text-align: right;
+    color: #fff;
+}
+header nav ul li:nth-last-child(-n+2){
+    /* background-color: black; */
+    border-radius: 15px;
+
+}
+header nav ul li button {
+  font-family: 'Times New Roman', Times, serif; /* Set the font family */
+  background-color: black; /* Example background color */
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+header nav ul li button:hover {
+  color: gray;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    transition: .3s linear;
+    text-align: center;
+    padding: 10px 20px;
+}
+header nav ul li a:hover{
+    color: gray;
+    
+}
+header nav .bi-three-dots-vertical {
+    display: unset;
+}
+header .content {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid #000; */
+}
+header .content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid #000; */
+    /* background: url("https://wallpaperbat.com/img/44615-beautiful-travel-destination-landscape-wallpaper-4k.jpg")no-repeat center center/cover; */
+    border-radius: 10px;
+    z-index: -1;
+}
+header .content .cont_bx{
+  width:500px;
+  height:auto;
+  color: #000;
+  padding: 30px;
+}
+header .content .cont_bx h1{
+  line-height: 40px;
+  font-weight: 800;
+  margin: 0;
+}
+header .content .cont_bx p{
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 70px); */
+  /* height: 10px; */
+  /* padding-top: 20px; */
+}
+
+.left-division {
+  width: 250px;
+  /*background-color: #f4f4f4; */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #170505;
+  font-weight: 600;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: #ccc;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-item {
+  display: none;
+}
+
+.content-item.active {
+  display: flex; /* Display active content item as flex container */
+  flex-direction: column; /* Arrange children vertically */
+  gap: 20px; 
+}
+.content-item { 
+  display: none; 
+}
+.default-content { 
+  display: block; 
+}
+.default-content h1 { 
+  margin-top: 5px;
+  text-align: center;
+  padding-left: 150px;
+}
+.default-content p { 
+  margin-top: 5px;
+  text-align: center;
+  padding-left: 150px;
+}
+.trip_px .default-content .image-container {
+  padding-left: 150px;
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;     /* Centers the image vertically */
+  height: 100%;            /* Optional, depends on your layout */
+}
+.container .trip_px{
+  position: relative;
+  width: 200;
+  height: 25px;
+  margin: 20px;
+  /* border:1px solid #000; */
+  /* background-color: #000; */
+} 
+
+.right-division {
+  /* padding: 20px; */
+  margin-left: 50px; /* Space for the fixed left division */
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  /* height: calc(100vh - 70px); */
+}
+.right-division h1{
+  text-align: center;
+}
+.vertical-content {
+  background-color: #fff;
+  padding: 20px;
+  /* margin: 10%; */
+  border-radius: 8px;
+  display: flex;
+  /* text-align: center; */
+  align-items: flex-start; /* Aligns items at the start of the container */
+  gap: 20px;
+}
+.vertical-content img {
+    display: block; /* Makes sure image doesn't have a bottom margin */
+}
+.vertical-content p{
+  flex: 1;
+  text-align: justify;
+}
+.vertical-content small{
+  flex: 1;
+  text-align: justify;
+  flex-direction: column;
+}
+.popup-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  border-radius: 10px;
+  color: #fff;
+}
+.form-container a{
+  color: #fff;
+}
+.form-container a:hover{
+  color: grey;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.popup-form .form-container h2{
+  text-align: center;
+}
