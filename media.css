@@ -1,0 +1,81 @@
+@media screen and (max-width: 1485px) {
+    .activities {
+        width: 75%;
+        height: auto;
+        /* border: 1px solid #000; */
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .activities{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    header{
+        width: 90%;
+    }
+    .activities{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1150px) {
+    header{
+        width: 95%;
+    }
+    header .trip_px .search_bx{
+        width: 75%;
+    }
+    header .trip_px .travel_bx .cards{
+        overflow: auto;
+    }
+    header .trip_px .travel_bx .cards .card{
+        min-width: 220px;
+        margin-right: 10px;
+    }
+    .activities{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 950px) {
+    header .trip_px .search_bx{
+        width: 93%;
+    }
+    header .trip_px .search_bx .card{
+        margin-right: 8px;
+    }
+}
+@media screen and (max-width: 714px) {
+    header nav ul{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px 10px gray;
+        justify-content: center;
+        top: -100%;
+        right: 30%;
+        z-index: 99999999;
+        padding: 0px 10px 8px 30px;
+        transition: 8s linear;
+    }
+    header nav .ul_active{
+        top: 0;
+    }
+    header nav ul li{
+        padding: 8px 0px;
+        text-align: center;
+    }
+    header nav .bi-three-dots-vertical {
+        display: unset;
+    }
+    header .trip_px .search_bx{
+        width: 93%;
+    }
+    .activities{
+        width: 75%;
+    }
+}
